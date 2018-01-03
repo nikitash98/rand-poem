@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 function makeDisappear () {
     console.log("We doin it");
-    $("button").fadeOut(200);
+    $(".arrow").fadeOut(200);
     $("p").slideUp(1000, function() {
         $("h2").removeClass("exposed");
         $("h2").addClass("hidden");
@@ -38,7 +38,7 @@ function makeSearchAppear() {
         $("h2").addClass("exposed");
         setTimeout( function() {
             $("p").slideDown(1000); 
-                    $("button").fadeIn(200);
+                    $(".arrow").fadeIn(200);
 
         }, 800);
         });
@@ -57,7 +57,7 @@ function makeAppear() {
         $("h2").addClass("exposed");
         setTimeout( function() {
             $("p").slideDown(1000); 
-                    $("button").fadeIn(200);
+                    $(".arrow").fadeIn(200);
 
         }, 800);
         });
